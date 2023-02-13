@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>傻子集群</title>
-    <style>
-      body {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height:100%">
+        <!-- 头部 -->
+        <div class="head flex flex1">
+
+        </div>
+        <!-- 内容 -->
+        <div class="flex flex1">
+            <div class="column flex1" style="height: 1000px;"></div>
+            <div class="column " style="height: 1000px;flex: 4;box-shadow: 2px 2px 2px 5px #aaa7a7;">
+               <h1 class="flex title" >个人基本信息:</h1>
+               <span class="flex">本科毕业于广东财经大学华商学院</span>
+               <h1 class="flex title" >专业技能:</h1>
+                <span class="flex">熟练使用HTML、CSS、JavaScript</span>
+                <span class="flex">熟练使用Vue2全家桶，对Vue2核心原理有一定的了解</span>
+                <span class="flex">熟悉Uni-app移动开发框架，Vue3开发框架</span>
+                <span class="flex">熟悉Element-ui、Bootstarp框架</span>
+                <span class="flex">熟悉Ajax，实现异步页面无刷新抽取数据，同步校验数据，了解JSONP和CORS等跨域解决方案</span>
+                <span class="flex">熟悉HTTP、HTTPS协议，了解tcp、ip协议分层解包的过程</span>
+                <span class="flex">了解Webpack构建工具，了解其基本配置</span>
+                <span class="flex">了解node.js，利用其搭建简单的服务器，编写测试api</span>
+                <span class="flex">了解postman、Apifox等接口测试工具</span>
+                <span class="flex">了解Recat.js框架以及ES6新特性、CSS预处理</span>
+               <h1 class="flex title" >项目经验:</h1>
+               <span class="flex">基于Vue的买即达购物平台&nbsp;--> 
+                    <a href="https://github.com/SMcage/SM/blob/main/index.html">作品图解链接</a>
+                </span>
+               <span class="flex">基于Vue的后台商品管理系统&nbsp;-->
+                    <a href="https://github.com/SMcage/SM/blob/main/index.html">作品图解链接</a>
+               </span>
+            </div>
+            <div class="column flex1" style="height: 1000px;"></div>
+        </div>
+        <!-- 尾部 -->
+        <div class="footer flex "></div>
+    </div> 
+</body>
+<style>
+    *{
+       border: 1px solid black;
+    }
+    body{
         margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="background-color: #c0c0c0; text-align: center; padding: 40px">
-      <img
-        src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww3.sinaimg.cn%2Fcrop.0.0.855.855.1024%2F005IDLewgw1embnjofrnlj30nt0ntgo7.jpg&refer=http%3A%2F%2Fwww.sina.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661154675&t=afa11a48e34360af6e6d149690cf6336"
-        alt="ruby rose"
-        width="120"
-        height="130"
-      />
-    </div>
-
-    <div
-      style="max-width: 700px; margin: 30px auto; padding: 15px; line-height: 2"
-    >
-      <p style="font-family: arial; color: rgb(175, 235, 63); font-size: 20px">
-        中国
-      </p>
-      <p>男</p>
-      <p>大学</p>
-      <p>未婚</p>
-      <p>亚健康</p>
-      <p>非征婚网站</p>
-    </div>
-
-    <div
-      style="
-        background-color: #c0c0c0;
-        text-align: center;
-        width: 100%;
-        bottom: 0;
-        position: fixed;
+        padding: 0;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    .head{
+        background:-webkit-linear-gradient(top,hsl(120, 1%, 77%),#aaa7a7,#d6cdcd);
         height: 150px;
-      "
-    >
-      <div style="padding: 10px">个人网站</div>
-      <div style="padding: 10px">暂无备案</div>
-      <p><a href="https://smcage.github.io/SM/new.html">红郎大全</a></p>
-    </div>
-
-    <div class="hezi"></div>
-  </body>
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    .footer{
+        background-color:#d9d1d1;
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:60px;
+    }
+    .flex{
+        display: flex;
+    }
+    .flex1{
+        flex: 1;
+    }
+    .column{
+        flex-direction: column;
+    }
+    div span{
+        margin: 5px 20px;
+        padding: 5px;
+    }
+    .title{
+        font-size:25px;
+        font-weight: bold;
+        margin: 5px;
+    }
+</style>
 </html>
